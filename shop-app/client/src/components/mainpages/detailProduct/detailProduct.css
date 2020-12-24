@@ -1,0 +1,97 @@
+.detail {
+	display: flex;
+	box-shadow: 0 0 0.5rem #ddd;
+	margin: 1.5rem;
+}
+
+.detail > .line {
+	height: 1fr;
+	margin: 1.5rem 0;
+	border-right: 1px #ddd solid;
+	box-shadow: 0 0 0.5rem #ddd;
+}
+.container > div > h2 {
+	text-align: center;
+	text-transform: uppercase;
+	box-shadow: 0 0 0.5rem #ddd;
+	margin: 0 1.5rem;
+	padding: 1rem 0;
+}
+.detail > img {
+	width: 100%;
+	margin: 1.5rem;
+	display: block;
+}
+
+.box-detail {
+	width: 100%;
+	margin: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.box-detail > .row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.content-detail {
+	flex-grow: 2;
+}
+
+.box-detail .row > h2 {
+	text-transform: uppercase;
+	color: darkblue;
+	letter-spacing: 2px;
+	font-weight: 2rem;
+}
+
+.btn-group .row > p {
+	line-height: 1.5;
+	opacity: 0.8;
+}
+
+.btn-group {
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn-group > .cart {
+	background: #333;
+	color: white;
+	margin-top: 1rem;
+	padding: 1rem;
+	display: inline-block;
+
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	width: 50%;
+	text-align: center;
+}
+.buy {
+	margin-right: 0.75rem;
+}
+.like {
+	margin-left: 0.75rem;
+}
+
+@media only screen and (max-width: 768px) {
+	.detail > .line {
+		display: none;
+	}
+	.detail {
+		justify-content: center;
+		flex-direction: column;
+		padding: 1.5rem;
+	}
+	.detail > img {
+		margin: 0rem 0 1.5rem;
+	}
+
+	.box-detail {
+		margin: 0rem;
+	}
+}

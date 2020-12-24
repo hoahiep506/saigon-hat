@@ -1,0 +1,61 @@
+header {
+	min-height: 3rem;
+	width: auto;
+	overflow: hidden;
+	padding: 0 1.5rem;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 0 0px 0.5rem #ddd;
+}
+
+header h1 {
+	margin: 0.5rem 0;
+}
+
+header img {
+	width: 2rem;
+}
+
+header > .logo {
+	flex: 1;
+}
+
+header a {
+	text-transform: uppercase;
+	color: #555;
+}
+
+header ul li {
+	display: inline-block;
+	opacity: 0.7;
+	padding: 0 1rem;
+}
+
+header ul li:hover {
+	opacity: 1;
+}
+
+.resp {
+	display: none;
+}
+
+.cart-icon {
+	position: relative;
+}
+
+.cart-icon span {
+	background: crimson;
+	border-radius: 0.6rem;
+	color: white;
+	width: 1.1rem;
+	height: 1.1rem;
+
+	position: absolute;
+	top: -0.4rem;
+	right: -0.4rem;
+	text-align: center;
+	font-size: 12px;
+}
